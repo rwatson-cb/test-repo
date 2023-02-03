@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@( * O * )@</title>
+  @entryPointStyles('app')
+  @entryPointScripts('app')
+</head>
+<body>
+
+  <main>
+    <div>
+      <h1 class="title"> ToDo: Home </h1>
+      <p class="subtitle">
+       Here you'll find your to-do list. <br>
+       Let's get some stuff done!
+      </p>
+      
+      <a href="/create">Create a new task</a>
+      
+      <br>
+
+      <p>Todos Table</p>
+      <ul>
+        <li>
+          Task 1
+          <form method="post" action="/tasks/1/complete">
+            <button>Mark as complete</button>
+          </form>
+        </li>
+        <li>Task 2
+          <form method="post" action="/tasks/2/complete">
+            <button>Mark as complete</button>
+          </form>
+        </li>
+        <li>Task 3
+          <form method="post" action="/tasks/3/complete">
+            <button>Mark as complete</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

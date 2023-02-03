@@ -1,0 +1,35 @@
+Todo list with tests using Adonis JS
+
+Done:
+1. Set up Adonis JS project
+2. Create basic webpage that just outputs some string
+3. Write first test that checks webpage can be accessed and that it contains your text
+4. Set up database (in docker ideally, but doesn’t matter)
+5. Write test that confirms database access
+6. Create Todo model that allows for a created time, completed flag, text description
+7. Create end point to get Todos. Can be a simple page that just outputs plain text
+8. Write test to prove fetching Todos works
+9. Create page to create a Todo
+10. Create endpoint to save new Todo 
+11. Write test to prove endpoint saves new Todo
+12. Create endpoint to mark a Todo as complete
+13. Write test to prove endpoint marks Todo as complete
+14. Tests for all remaining endpoints
+15. Ensure all remaining endpoints use models
+
+Tasks:
+16. Hook up frontend to backend
+
+TESTS:
+should display welcome page
+should display home page
+Index Y - should display tasks
+? Index N -
+Show Y - should display a specific task
+Show N - should not display a task that does not exist
+Store Y - should store a tasks
+Store N - should not display a task that does not exist
+Complete Y - should mark a task as complete
+Complete N - should not mark a task that does not exist as complete
+? Delete Y - 
+? Delete N - 
