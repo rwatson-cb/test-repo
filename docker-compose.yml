@@ -1,11 +1,18 @@
 version: '3'
-
-services:
-  mysql:
-    image: mysql/mysql-server:8.0.32
-    ports:
-      - 3306:3306
-    environment:
-      MYSQL_DATABASE: training1_db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
+todo-backend:
+  image: node:18
+  volumes:
+    - "./src/demo:/app"
+    - "./entrypoint.sh:/entrypoint.sh"
+  ports:
+    - "3000:3000"
+  entrypoint: "/entrypoint.sh"
+  services:
+    mysql:
+      image: mysql/mysql-server:8.0.32
+      ports:
+        - 3306:3306
+      environment:
+        MYSQL_DATABASE: training1_db
+        MYSQL_USER: root
+        MYSQL_PASSWORD: password

@@ -18,7 +18,9 @@ Done:
 15. Ensure all remaining endpoints use models
 
 Tasks:
-16. Hook up frontend to backend
+16. Move frontend to container
+17. Move backend to container
+18. Hook up react frontend to backend
 
 TESTS:
 should display welcome page
